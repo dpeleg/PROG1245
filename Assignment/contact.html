@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Daniel Peleg dpeleg0530@conestogac.on.ca 8910530 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <meta name="description" content="Yet another Taylor Swift fanpage">
+	<meta name="keywords" content="Taylor, Swift, Music, Awesome">
+	<meta name="author" content="Taylor Swift">
+    <title>Swiftie Contact </title>
+</head>
+<body>
+    <header class="structural" id="type1">
+        <h1>Taylor Swift</h1>
+    </header>
+
+    <nav class="structural">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a>Media &#9662;</a>
+                <ul class="dropdown">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <container class="main-container">
+        <main class="structural">
+        <section id="sec1">
+            <h2>Contact Us</h2>
+        </section>
+        <form>
+            <div>
+                <label for="name" class="required">Name</label>
+                <input type="text" name="name" id="name" required autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="email" class="required">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="subject">What is the title of your message to Taylor?</label>
+                <br>
+                <select id="subject" name="subject" required>
+                    <option value="" selected>Select</option>
+                    <option value="love">We Love You</option>
+                    <option value="album">Make another album</option>
+                    <option value="hate">You can do better</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+            <br>
+            <div>
+                <label for="comment">Comment</label>
+                <br>
+                <textarea id="comment" name="comment" placeholder="enter your comment here" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="human" class="required">I am human</label>
+                <input type="checkbox" value="true" name="human" id="human" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+           
+    </main>
+    <aside class="structural">
+        <h2>Additional Information</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Taylor_Swift" target="_blank">Wikipedia Page</a></li>
+            <li><a href="https://www.theswiftmuseum.com/" target="_blank">The Taylor Swift Museum</a></li>
+        </ul>
+    </aside>
+</container>
+    <footer class="structural" id="type1">
+        <p>&copy;Daniel Peleg 2023</p>
+    </footer>
+</body>
+</html>

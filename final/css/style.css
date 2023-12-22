@@ -1,0 +1,198 @@
+/* Daniel Peleg - 8910530 */
+
+html{
+    font: normal normal normal 20px/1.5 ariel helvetica sans-serif;
+}
+
+
+body{
+
+    width : 100%;
+    max-width: 1100px;
+    margin: 0.25rem auto;
+    box-shadow: 0 0 0.5rem black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+   
+}
+
+header, footer{
+    background-image: linear-gradient(green, rgb(27, 53, 78), rgb(20, 29, 109));    
+    /* background-color: #4177a4; */
+    padding:  0.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+nav{
+    background-color: rgb(3, 43, 75);
+    padding: 0.25rem;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+}
+
+nav ul li a{
+  
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-variant: small-caps;
+
+}
+
+main h2{
+    color: #113253;
+    font-size: 1.5rem;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+aside h2{
+    color: #113253;
+    font-size: 1.25rem;
+    text-align: center;
+    font-variant: small-caps;
+}
+aside{
+    background: rgba(174, 199, 245, 0.729) url(../images/background.avif) /*left top / contain no-repeat content-box padding-box */;
+
+}
+
+.home>header{
+    grid-area: gridheader;
+}
+.home>nav{
+    grid-area: gridnav;
+}
+.home>main{
+    grid-area: gridmain;
+}
+.home>aside{
+    grid-area: gridaside;
+}
+.home>footer{
+    grid-area: gridfooter;
+}
+
+.home{
+    display: grid;
+    grid-template-areas: 
+        "gridheader gridheader gridheader"
+        "gridnav gridnav gridnav"
+        "gridmain gridmain gridaside"
+        "gridfooter gridfooter gridfooter"
+    ;
+}
+.home aside{
+    /*change to background image*/
+    background-color:#b4d1f2;
+    padding: 0 1rem 1rem 1rem;
+}
+.home main{
+    padding: 0 0.75rem 0.5rem 0;
+}
+
+/* Add CSS here for the form, table and gallery */
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    font-size: 0.9em;
+    font-variant: small-caps;
+}
+form input{
+    font-variant: small-caps;
+    margin: .5rem auto;
+}
+#submit{
+    grid-column: span 2;
+    background-color: darkblue;
+    color: whitesmoke;
+    align-self: baseline;
+    padding: .1% 30%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+	border: 4px dotted whitesmoke;
+}
+td, th{
+	  text-align: center;
+}
+
+
+video{
+    width: 100%;
+    height: auto;
+}
+.gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 2rem; */
+    grid-template-areas: "image1 image1 image1";
+
+	/* row-gap: 0.1rem; */
+	
+}
+figure{
+	
+    border: 0.2rem solid rgb(1, 6, 153);
+	justify-content: center;
+	text-align: center;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.images{
+    width: 90%;
+    height: auto;
+    margin: 1em;
+    /* grid-area: image1; */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Add responsive CSS here */
+    html{
+        font-size: 16px;
+    }
+
+    .home{
+        display: grid;
+        grid-template-areas: 
+            "gridheader"
+            "gridnav"
+            "gridmain"
+            "gridaside"
+            "gridfooter"
+        ;
+    }
+    .gallery{
+		display: grid;
+	    grid-template-columns: 1fr;
+        grid-template-areas: "image1";
+
+	}
+
+}
+
+

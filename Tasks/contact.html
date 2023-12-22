@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Daniel Peleg, dpeleg0530@conestogac.on.ca -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Yet another Fiona Apple fanpage">
+	<meta name="keywords" content="Fiona, Apple, Music, Awesome">
+	<meta name="author" content="Fiona Apple">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<title>Task 5 - Contact</title>
+</head>
+
+<body>
+	<header class="structural">
+		<h1>Fiona Apple</h1>
+	</header>
+	<nav class="structural">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<section>
+		<main class="structural">
+			<h2>Contact</h2>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" required autofocus>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+				</div>
+				<br>
+				<fieldset>
+					<legend>What section of PROG1245 are you in?</legend>
+					<label for="4">Section 4</label>
+					<input type="radio" name="sec" value="4" id="4" required>
+					<br>
+					<label for="5">Section 5</label>
+					<input type="radio" name="sec" value="5" id="5">
+					<br>
+					<label for="8">Section 8</label>
+					<input type="radio" name="sec" value="8" id="8" checked>
+					<br>
+				</fieldset>
+				<div>
+					<label for="help">What do you need help with?</label>
+					<select id="help" name="help" required>
+						<option value="" selected>Select</option>
+						<option value="html">HTML</option>
+						<option value="css">CSS</option>
+						<option value="both">Both (HTML & CSS)</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="comment">Comment</label>
+					<textarea id="comment" name="comment" placeholder="enter your comment here" rows="4" required></textarea>
+				</div>
+				<div>
+					<label for="human">I am human</label>
+					<input type="checkbox" value="true" name="human" id="human" required>
+				</div>
+				<div>
+					<input type="submit" id="submit" value="Submit">
+				</div>
+	
+			</form>
+			
+		</main>
+		<aside class="structural">
+			<h2 id="side">Fiona's favourite songs</h2>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=QnXjISlKLuE" target="_blank">Shadowboxer</a></li>
+				<li><a href="https://songmeanings.com/songs/view/2061/" target="_blank">Fast as You Can</a></li>
+			</ul>
+		</aside>
+
+	</section>
+
+	
+	<footer class="structural">
+		<p>  &copy;2023 Daniel Peleg <br>(not the lyrics, just the webpage)</p>
+	</footer>
+	
+	
+	
+</body>
+</html>

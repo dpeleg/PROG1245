@@ -1,0 +1,54 @@
+
+#gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	row-gap: 0.1rem;
+	
+}
+figure{
+	border: 0.2rem solid rgb(1, 6, 153);
+	justify-content: center;
+	text-align: center;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+img{
+	width: 80%;
+	height: 80%;
+	padding-top: 5%;
+}
+#album1{
+	clip-path: polygon(27.54% 6.05%, 98.63% 6.48%, 100% 100%, 0% 100%);
+}
+#album3{
+	clip-path: circle();
+}
+#album4{
+	clip-path: circle(45% at 50% 50%);
+}
+#album5{
+	clip-path: ellipse(33% 43% at 50% 50%);
+}
+#album6{
+	clip-path: polygon(0.04% 6.48%, 98.63% 6.48%, 100% 100%, 0% 100%, 0.16% 42.84%, 20.03% 43.06%, 20.42% 28.39%, 0.02% 27.89%);
+}
+#album7{
+	clip-path: polygon(0.04% 6.48%, 98.63% 6.48%, 71.36% 55.55%, 100% 100%, 0% 100%, 27.52% 55.12%);
+}
+#album9{
+	clip-path: circle(35.4% at 50% 50%);
+}
+
+
+@media (max-width: 900px){
+	#gallery{
+		grid-template-columns: 1fr 1fr;
+	}	
+}
+@media (max-width: 600px){
+	#gallery{
+		grid-template-columns: 1fr;
+	}
+}

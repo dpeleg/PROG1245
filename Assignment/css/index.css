@@ -1,0 +1,28 @@
+img{
+	height: auto;
+	max-width: 60%;
+}
+
+#img1{
+	clip-path: polygon(22.57% 23px, 61.88% 7.46%, 88.81% 78.14%, 71.5% 99.66%, 5px 100.21%);
+	shape-outside: polygon(0.17% 6px, 61.46% 1.55%, 83.77% 20.51%, 100.8% 86.32%, 90.46% 100.46%, 5px 100.21%);
+	float: left;
+}
+#img1 figcaption{
+	float: left;
+}
+
+#sec3{
+	clear: both;
+}
+#img2{
+	clip-path: polygon(34.38% 3px, 86.39% 0.53%, 100.38% 99.70%, 5px 99.47%);
+}
+
+table, th, td {
+	border: 1px solid;
+  }
+  .albumyear{
+	  text-align: center;
+  }
+  

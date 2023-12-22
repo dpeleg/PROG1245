@@ -1,0 +1,78 @@
+/* Daniel Peleg - 8910530 */
+
+body{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	font: italic small-caps bold 12px/30px Georgia, serif;
+	padding: 1%;
+}
+.structural{
+	margin: 10px;
+	padding: 10px;
+}
+h1{
+	color: blue;
+	font-size: 3em;
+}
+h2{
+	color: rgb(25, 4, 148);
+	font-size: 20px;
+}
+main{
+	height: 70vh;
+}
+img{
+	width: 27vw;
+	border: 2px solid darkslategrey;
+	border-width: 80%, 90%;
+	
+}
+figure{
+	background-color: coral;
+	width: 45%;
+	height: 60%;
+	margin: auto;
+	padding: 10px;
+}
+#img1{
+	float:left;
+
+}
+#img2{
+	float: right;
+}
+figcaption{
+	font-size: 1.2em;
+	color: darkgreen;
+	font-weight: bold;
+	padding: 5px;
+}
+
+section{
+	clear: both;
+	padding-top: 2vh;
+	
+}
+footer{
+	clear: both;
+	padding-top: 3vh;
+	padding-bottom: 1vh;
+}
+a{
+	color: darkmagenta;
+
+}
+a:hover{
+	color:firebrick;
+	font-size: 2em;
+}
+li{
+	font-size: 1.5em;
+	list-style-type: square;
+}
+header,footer{
+	background-color: rgba(121, 212, 195, 0.672);
+}
+
+
